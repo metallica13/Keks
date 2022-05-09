@@ -35,9 +35,72 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
-  width: 200px;
-  height: 100px;
-  padding: 20px;
-  background-color: green;
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #1c1c1c;
+}
+.header {
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wrapper-header-nav {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 157px;
+}
+
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-item {
+  margin-right: 42px;
+  text-decoration: none;
+  align-self: baseline;
+}
+.header-item:nth-child(7) {
+  margin-right: 146px;
+}
+.header-item:nth-child(8) {
+  margin-right: 38px;
+}
+.header-item:nth-child(9) {
+  margin-right: 0;
+}
+
+.header-link {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  opacity: 75%;
+}
+
+.book-a-demo {
+  display: inline-block;
+  color: white;
+  padding: 11px 34px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: #6f2cff;
 }
