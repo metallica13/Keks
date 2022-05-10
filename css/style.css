@@ -44,7 +44,7 @@ body {
   color: #1c1c1c;
 }
 .header {
-  background-color: blue;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -104,3 +104,5 @@ body {
   border-radius: 20px;
   background-color: #6f2cff;
 }
+
+/* Intro */
