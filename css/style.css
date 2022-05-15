@@ -35,13 +35,17 @@ html {
   box-sizing: inherit;
 }
 
+b {
+  font-weight: bold;
+}
+
 body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #1c1c1c;
+  color: black;
 }
 .header {
   background-color: white;
@@ -106,3 +110,79 @@ body {
 }
 
 /* Intro */
+
+.wrapper-intro {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.intro {
+  margin-top: 60px;
+  padding-top: 134px;
+  min-height: 100vh;
+  background: url(../img/intro-background.jpg) no-repeat center;
+  background-size: cover;
+  margin-bottom: 35px;
+}
+
+.pre-intro-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 19px;
+}
+
+.intro-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 61px;
+  margin-bottom: 37px;
+}
+.intro-title-line-1 {
+  line-height: 61px;
+}
+
+.intro-title-line-2 {
+  line-height: 54px;
+  color: #6f2dff;
+}
+
+.intro-sub-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 438px;
+  margin-bottom: 4px;
+}
+
+.sending-form-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sending-form-field {
+  background-color: white;
+  border: 1px solid #6f2cff;
+  border-radius: 27.5px 0px 0px 27.5px;
+  height: 45px;
+  width: 268px;
+  padding-left: 26px;
+  color: #00000045;
+}
+
+.sending-form-submit {
+  background: #6f2cff;
+  border-color: #6f2dff;
+  border-radius: 0px 27.5px 27.5px 0px;
+  height: 45px;
+  width: 187px;
+  color: white;
+}
+
+.sending-form-submit:hover,
+.sending-form-submit:focus,
+.sending-form-submit:active {
+  opacity: 75%;
+}
