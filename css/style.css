@@ -229,12 +229,28 @@ body {
 
 /* Statistics */
 
+.statistics {
+  margin-bottom: 94px;
+}
+
 .statistics-wrapper {
   max-width: 1380px;
   margin: 0 auto;
 }
 
 .statistics-content {
+  display: flex;
+  justify-content: space-between;
+}
+.statistics-content-left {
+  padding-left: 70px;
+  max-width: 689.5px;
+}
+
+.statistics-content-right {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 689.5px;
 }
 
 .statistics-title {
@@ -258,6 +274,7 @@ body {
   background-color: #6f2cff;
   text-decoration: none;
   margin-right: 22px;
+  margin-bottom: 56px;
 }
 
 .statistics-customers-link {
@@ -270,4 +287,43 @@ body {
   border-bottom: 2px solid #000;
   border-color: #6f2cff;
   padding: 0 5px 5px;
+}
+
+.statistics-note {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000;
+}
+
+.statistics-report {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000;
+}
+
+.statistics-value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #000;
+}
+
+.statistics-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000;
+}
+
+.statistics-content-right-item {
+  width: 308px;
+  border-left: 1px solid #e0e0e0;
+  padding-left: 16.5px;
+  padding-bottom: 116px;
 }
