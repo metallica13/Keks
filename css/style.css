@@ -119,7 +119,7 @@ body {
 .intro {
   margin-top: 60px;
   padding-top: 134px;
-  min-height: 100vh;
+  min-height: 695px;
   background: url(../img/intro-background.jpg) no-repeat center;
   background-size: cover;
   margin-bottom: 35px;
@@ -185,4 +185,89 @@ body {
 .sending-form-submit:focus,
 .sending-form-submit:active {
   opacity: 75%;
+}
+
+/* Post-intro */
+.post-intro-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.post-intro-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
+}
+
+.post-intro-item {
+  padding-right: 59px;
+}
+.post-intro-item:last-child {
+  padding-right: 0;
+}
+
+.customers-container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.customers-link {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 2px solid #000;
+  border-color: #6f2cff;
+  padding: 0 5px;
+}
+
+/* Statistics */
+
+.statistics-wrapper {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.statistics-content {
+}
+
+.statistics-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  color: #1c1c1c;
+  margin-bottom: 58px;
+}
+
+.statistics-book-a-demo-link {
+  display: inline-block;
+  color: white;
+  padding: 11px 45px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: #6f2cff;
+  text-decoration: none;
+  margin-right: 22px;
+}
+
+.statistics-customers-link {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 2px solid #000;
+  border-color: #6f2cff;
+  padding: 0 5px 5px;
 }
