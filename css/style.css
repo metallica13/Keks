@@ -411,3 +411,64 @@ body {
 
   color: #000000;
 }
+
+/* Part with Video */
+.video-part {
+  padding-top: 94px;
+  background: #f5f5f5;
+  padding-bottom: 101px;
+}
+.video-part-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.video-part-title-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 90px;
+}
+
+.video-wrapper {
+  text-align: center;
+  margin-bottom: 76px;
+}
+
+.video-wrap-container-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-part-see-product-link {
+  color: white;
+  padding: 11px 45px 14px;
+
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: #6f2cff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.video-part-book-a-demo-link {
+  color: #6f2cff;
+  padding: 11px 45px 14px;
+
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: white;
+  text-decoration: none;
+}
