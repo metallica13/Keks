@@ -472,3 +472,71 @@ body {
   background-color: white;
   text-decoration: none;
 }
+
+/* Opportunities */
+.opportunities {
+  margin-top: 96px;
+  margin-bottom: ;
+}
+
+.opportunities-wrapper {
+  /* padding: 0 224px 0 217px; */
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.opportunities-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 65px;
+}
+
+.opportunities-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.opportunities-card {
+  max-width: 250px;
+  margin-right: 115px;
+  margin-bottom: 84px;
+}
+.opportunities-card:nth-child(3),
+.opportunities-card:nth-child(6) {
+  margin-right: 0;
+}
+
+.opportunities-card-pic {
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.opportunities-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 45px;
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.opportunities-card-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: #1c1c1c;
+}
