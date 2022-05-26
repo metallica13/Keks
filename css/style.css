@@ -640,3 +640,100 @@ body {
 }
 
 /* Industries */
+
+.industries {
+  padding-top: 94px;
+}
+
+.industries-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.industries-title {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.industries-title-desc {
+  margin-bottom: 65px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.industries-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.industries-card {
+  max-width: 460px;
+  height: 199px;
+  background: #17002e;
+  border-radius: 8px 10px 10px 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.industries-card:nth-child(odd) {
+  margin-right: 30px;
+}
+.industries-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+  background: url(/img/svg/industries/1-industries-thumb.svg) no-repeat 1% 100%;
+  padding: 22px 0 10px 80px;
+  margin-bottom: 21px;
+}
+.industries-card-title:nth-child(2) {
+  background-image: url(/img/svg/industries/2-industries-thumb.svg);
+}
+.industries-card-title:nth-child(2) {
+  background-image: url(/img/svg/industries/3-industries-thumb.svg);
+}
+.industries-card-title:nth-child(3) {
+}
+.industries-card-title:nth-child(4) {
+}
+.industries-card-title:nth-child(5) {
+}
+
+.industies-card-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  height: 54px;
+  color: #ffffff;
+  height: 44px; /*чтобы прижать industies-card-bottom к низу */
+  margin-bottom: 8px;
+}
+
+.industies-card-bottom {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+
+  color: #ffffff;
+
+  border-bottom: 2px solid white;
+  padding-right: 30px;
+  padding-bottom: 7px;
+}
