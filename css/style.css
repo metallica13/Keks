@@ -476,7 +476,7 @@ body {
 /* Opportunities */
 .opportunities {
   margin-top: 96px;
-  margin-bottom: ;
+  margin-bottom: 220px;
 }
 
 .opportunities-wrapper {
@@ -540,3 +540,103 @@ body {
 
   color: #1c1c1c;
 }
+
+/* Leading-brands */
+.leading-brands {
+  background-color: #f5f5f5;
+  padding-top: 88px;
+}
+
+.leading-brands-wrapper {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.leading-brands-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 75px;
+}
+
+.leading-brands-cards-with-arrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.arrow {
+  font-family: 'Font Awesome\ 5 Free';
+  font-size: 40px;
+  font-weight: 900;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  outline: none;
+}
+
+.arrow-left::before {
+  content: '\f053';
+  color: #6f2cff;
+  top: 10px;
+}
+
+.arrow-right::after {
+  content: '\f054';
+  color: #6f2cff;
+}
+.leading-brands-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 105px;
+}
+
+.leading-brands-card {
+  max-width: 320px;
+  height: 438px;
+  background: #ffffff;
+  /* box-shadow: 0px 2px 4px rgba(192, 192, 192, 0.5); */
+  border-radius: 0px 0px 7px 7px;
+  margin-right: 40px;
+}
+.leading-brands-card:last-child {
+  margin-right: 0;
+}
+
+.leading-brands-card-image-container {
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.leading-brands-card-image {
+  border-radius: 7px 7px 0 0;
+}
+
+.leading-brands-card-shadow-container {
+  box-shadow: 0px 2px 4px rgba(192, 192, 192, 0.5);
+  height: 208px;
+}
+.leading-brands-card-logo-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.leading-brands-card-desc {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  padding: 0 50px;
+  text-align: center;
+
+  color: #6f2cff;
+}
+
+/* Industries */
