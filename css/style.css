@@ -794,3 +794,58 @@ body {
   text-decoration: none;
   display: inline-block;
 }
+
+/* Today */
+
+.today {
+  padding-top: 93px;
+  background: url(/img/today-bg.jpg) no-repeat;
+  padding-bottom: 107px;
+}
+
+.today-wrapper {
+  max-width: 455px;
+  margin: 0 auto;
+}
+
+.today-title {
+  margin-bottom: 39px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.today-sending-form-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.today-sending-form-field {
+  background-color: white;
+  border: 1px solid #6f2cff;
+  border-radius: 27.5px 0px 0px 27.5px;
+  height: 45px;
+  width: 268px;
+  padding-left: 26px;
+  color: #00000045;
+}
+
+.today-sending-form-submit {
+  background: #6f2cff;
+  border-color: #6f2dff;
+  border-radius: 0px 27.5px 27.5px 0px;
+  height: 45px;
+  width: 187px;
+  color: white;
+}
+
+.today-sending-form-submit:hover,
+.today-sending-form-submit:focus,
+.today-sending-form-submit:active {
+  opacity: 75%;
+}
