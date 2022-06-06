@@ -796,10 +796,11 @@ body {
 }
 
 /* Today */
+/* правильный ли способ для центровки контента в этом блоке? */
 
 .today {
   padding-top: 93px;
-  background: url(/img/today-bg.jpg) no-repeat;
+  background: url(/img/today-bg.jpg) no-repeat center;
   padding-bottom: 107px;
 }
 
@@ -848,4 +849,41 @@ body {
 .today-sending-form-submit:focus,
 .today-sending-form-submit:active {
   opacity: 75%;
+}
+
+/* Connect */
+
+.connect {
+  padding-bottom: 45px;
+}
+
+.connect-image-container {
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.connect-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 45px;
+
+  text-align: center;
+
+  color: #1c1c1c;
+  margin-bottom: 25px;
+}
+
+.connect-list-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.connect-item {
+  padding-right: 30px;
+  align-self: flex-end;
+}
+.connect-item:last-child {
+  padding-right: 0;
 }
