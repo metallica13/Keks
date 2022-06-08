@@ -43,6 +43,12 @@ img {
   height: auto; /* чтоб сжибалось пропорционально по высоте */
 }
 
+a:hover,
+a:focus,
+a:active {
+  opacity: 75%;
+}
+
 body {
   font-family: 'Roboto';
   font-style: normal;
@@ -886,4 +892,89 @@ body {
 }
 .connect-item:last-child {
   padding-right: 0;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 57px;
+  background-color: #20003c;
+  padding-bottom: 82px;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.featured-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 450px;
+}
+
+.common-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.featured-title {
+  width: 450px;
+}
+.footer-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  padding-top: 11px;
+}
+.featured-item {
+  width: calc(50% - 30px);
+}
+.featured-item:nth-child(even) {
+  margin-right: 50px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* .footer-logo {
+  object-position: center;
+} */
+
+.footer-logo-container {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.post-footer-logo {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.world {
+  position: absolute;
+  left: 110px;
+  top: 5px;
 }
