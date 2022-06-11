@@ -1,762 +1,686 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quibit</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      id="fontawesome-css"
-      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1"
-      type="text/css"
-      media="all"
-    />
-    <script src="javas.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrapper-header-nav">
-        <div class="header-logo">
-          <a href="/" class="header-logo-link">
-            <img
-              src="./img/svg/Qubit-logo.svg"
-              alt="Quibit"
-              class="header-logo-pic"
-            />
-          </a>
-        </div>
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-link" href="!#">Why Qubit?</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="!#">Products</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="!#">Solutions</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="!#">Customers</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="!#">Case studies</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="!#">Resources</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="!#">More</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link book-a-demo" href="!#">Book a demo</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="!#">Log In</a>
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quibit</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" id="fontawesome-css" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1"
+    type="text/css" media="all" />
+    <!--Основной js файл принято именовать index.js либо main.js-->
+  <script src="javas.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper-header-nav">
+      <div class="header-logo">
+        <a href="/" class="header-logo-link">
+          <!--Логотип лучше сделать текстом. А если уж хочешь сделать изображением, то обращай внимание на то, что у тебя выдралось из фигмы.
+            Сейчас это обычная png картинка, впихнутая в svg контейнер. И она дико плывет при масштабировании.-->
+            <img src="./img/svg/Qubit-logo.svg" alt="Quibit" class="header-logo-pic" />
+        </a>
       </div>
-    </header>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="!#">Why Qubit?</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="!#">Products</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="!#">Solutions</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="!#">Customers</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="!#">Case studies</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="!#">Resources</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="!#">More</a>
+          </li>
+          <!--Следующие две кнопки лучше выделить отдельно, т.к. они явно не относятся к основному меню.
+          Кроме того, тут и далее, для элементов, которые ВЫГЛЯДЯТ как кнопка используй тег button. Это будет семантичнее.-->
+          <li class="header-item">
+            <a class="header-link book-a-demo" href="!#">Book a demo</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="!#">Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Intro -->
+  <!-- Intro -->
 
-    <main class="main">
-      <section class="intro">
-        <div class="wrapper-intro">
-          <p class="pre-intro-title">Driving growth with personalization.</p>
-          <h1 class="intro-title">
-            <div class="intro-title-line-1">Make ecommerce</div>
-            <div class="intro-title-line-2">More personal.</div>
-          </h1>
-          <p class="intro-sub-title">
-            Hundreds of brands use <b>Qubit CommerceAI</b> to power the next
-            generation of product recommendations, badging and insights to build
-            exceptional customer experiences.
-          </p>
-          <form action="" class="sending-form">
-            <fieldset class="sending-form-wrap">
-              <p class="sending-form-info">
-                <input
-                  name="user-email"
-                  class="sending-form-field"
-                  type="text"
-                  value="Enter your email"
-                  onfocus="this.value=''"
-                  autocomplete="off"
-                />
-                <input
-                  class="sending-form-submit"
-                  type="submit"
-                  value="Book a demo"
-                />
-              </p>
-            </fieldset>
-          </form>
-        </div>
-
-        <!-- Post-Intro -->
-      </section>
-      <seciton class="post-intro">
-        <div class="wrapper-intro">
-          <p class="post-intro-title">Trusted by world-class brands.</p>
-
-          <ul class="post-intro-list">
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-1.svg" alt="barbour" />
-            </li>
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-2.svg" alt="lvmh" />
-            </li>
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-3.svg" alt="estee lauder" />
-            </li>
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-4.svg" alt="tjx" />
-            </li>
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-5.svg" alt="river island" />
-            </li>
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-6.svg" alt="raddison" />
-            </li>
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-7.svg" alt="g-star raw" />
-            </li>
-            <li class="post-intro-item">
-              <img src="/img/svg/customer-8.svg" alt="" />
-            </li>
-          </ul>
-          <div class="customers-container">
-            <a href="!#" class="customers-link"> Meet our customers > </a>
-          </div>
-        </div>
-      </seciton>
-
-      <!-- Statistics -->
-
-      <section class="statistics">
-        <div class="statistics-wrapper">
-          <div class="statistics-content">
-            <div class="statistics-content-left">
-              <h2 class="statistics-title">
-                Grow 2.5x faster than<br />your competitors.
-              </h2>
-              <a href="!#" class="statistics-book-a-demo-link"> Book a demo </a>
-              <a href="!#" class="statistics-customers-link">
-                Meet our customers >
-              </a>
-              <p class="statistics-note">*PwC audited methodology.</p>
-              <a href="" class="statistics-report">Read the report</a>
-            </div>
-            <div class="statistics-content-right">
-              <div class="statistics-content-right-item">
-                <p class="statistics-value">140%</p>
-                <p class="statistics-desc">
-                  Qubit's top customers<br />annual growth rate.
-                </p>
-              </div>
-              <div class="statistics-content-right-item">
-                <p class="statistics-value">9.5m</p>
-                <p class="statistics-desc">
-                  Personalized experiences<br />delivered every hour.
-                </p>
-              </div>
-              <div class="statistics-content-right-item">
-                <p class="statistics-value">$20bn</p>
-                <p class="statistics-desc">
-                  Online sales generated<br />by our customers in 2020.
-                </p>
-              </div>
-              <div class="statistics-content-right-item">
-                <p class="statistics-value">4.4m</p>
-                <p class="statistics-desc">
-                  Shoppers influenced<br />by Qubit every day.
-                </p>
-              </div>
-              <div class="statistics-content-right-item">
-                <p class="statistics-value">364</p>
-                <p class="statistics-desc">
-                  Ecommerce stores are<br />growing faster with Qubit.
-                </p>
-              </div>
-              <div class="statistics-content-right-item">
-                <p class="statistics-value">$1.6bn</p>
-                <p class="statistics-desc">
-                  Incremental revenue generated<br />by our customers in 2020.*
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CommerceAI -->
-      <section class="commerce">
-        <div class="commerce-wrapper">
-          <h3 class="commerce-title">Qubit CommerceAI.</h3>
-          <p class="post-title">The new way to drive growth.</p>
-          <div class="commerce-cards">
-            <div class="commerce-card">
-              <div class="commerce-card-pic">
-                <img src="/img/svg/more-insight-thumb.svg" alt="More insight" />
-              </div>
-              <h4 class="commerce-card-title">More insight</h4>
-              <p class="commerce-card-desc">
-                Learn which products drive performance and which don't, through
-                automated insights you can action.
-              </p>
-            </div>
-            <div class="commerce-card">
-              <div class="commerce-card-pic">
-                <img
-                  src="/img/svg/more-personal-thumb.svg"
-                  alt="More personal"
-                />
-              </div>
-              <h4 class="commerce-card-title">More personal</h4>
-              <p class="commerce-card-desc">
-                Qubit CommerceAI generates a model per shopper to make every
-                customer interaction more relevant.
-              </p>
-            </div>
-            <div class="commerce-card">
-              <div class="commerce-card-pic">
-                <img
-                  src="/img/svg/more-effective-thumb.svg"
-                  alt="More effective"
-                />
-              </div>
-              <h4 class="commerce-card-title">More effective</h4>
-              <p class="commerce-card-desc">
-                Qubit fuses data, intent, and design tools to enable your team
-                to create more effective customer experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Part-with-video -->
-      <section class="video-part">
-        <h3 class="video-part-title">All the power. Easy to use.</h3>
-        <p class="video-part-title-desc">
-          By collaborating with real ecommerce teams we've built the next-gen
-          personalization tool. No code. No clunkiness.
+  <main class="main">
+    <section class="intro">
+      <div class="wrapper-intro">
+        <p class="pre-intro-title">Driving growth with personalization.</p>
+        <!--Тег h1 тут неуместен. Этот текст не является основным заголовком ВСЕЙ страницы.-->
+        <h1 class="intro-title">
+          <!--Не используй div для обычного текста. Только p или span-->
+          <div class="intro-title-line-1">Make ecommerce</div>
+          <div class="intro-title-line-2">More personal.</div>
+        </h1>
+        <p class="intro-sub-title">
+          Hundreds of brands use <b>Qubit CommerceAI</b> to power the next
+          generation of product recommendations, badging and insights to build
+          exceptional customer experiences.
         </p>
-        <div class="video-wrapper">
-          <img class="video-image" src="/img/video.jpg" alt="video" />
-        </div>
-        <div class="video-wrap-container-links">
-          <a href="#!" class="video-part-see-product-link">See product</a>
-          <a href="#!" class="video-part-book-a-demo-link">Book a demo</a>
-        </div>
-      </section>
+        <form action="" class="sending-form">
+          <fieldset class="sending-form-wrap">
+            <!--Тег р тут лишний. Либо, если нужна ещё одна обертка, используй div.-->
+            <p class="sending-form-info">
+              <input name="user-email" class="sending-form-field" type="text" value="Enter your email"
+                onfocus="this.value=''" autocomplete="off" />
+              <input class="sending-form-submit" type="submit" value="Book a demo" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
 
-      <!-- Opportunities -->
+      <!-- Post-Intro -->
+    </section>
+    <seciton class="post-intro">
+      <div class="wrapper-intro">
+        <p class="post-intro-title">Trusted by world-class brands.</p>
+        <!--Все картинки ниже имеют туже проблему, что и логотип. Это png внутри svg и они плывут.
+        В данном случае ничего не поделаешь, так уж фигма выдирает из макета, но на будущее, такие изображения
+        надо запрашивать у заказчика в нормальном качестве.-->
+        <ul class="post-intro-list">
+          <li class="post-intro-item">
+            <!--Атрибут alt должен нести осмысленную информацию, описывающую изображение.-->>
+            <img src="/img/svg/customer-1.svg" alt="barbour" />
+          </li>
+          <li class="post-intro-item">
+            <img src="/img/svg/customer-2.svg" alt="lvmh" />
+          </li>
+          <li class="post-intro-item">
+            <img src="/img/svg/customer-3.svg" alt="estee lauder" />
+          </li>
+          <li class="post-intro-item">
+            <img src="/img/svg/customer-4.svg" alt="tjx" />
+          </li>
+          <li class="post-intro-item">
+            <img src="/img/svg/customer-5.svg" alt="river island" />
+          </li>
+          <li class="post-intro-item">
+            <img src="/img/svg/customer-6.svg" alt="raddison" />
+          </li>
+          <li class="post-intro-item">
+            <img src="/img/svg/customer-7.svg" alt="g-star raw" />
+          </li>
+          <li class="post-intro-item">
+            <img src="/img/svg/customer-8.svg" alt="" />
+          </li>
+        </ul>
+        <div class="customers-container">
+          <a href="!#" class="customers-link"> Meet our customers > </a>
+        </div>
+      </div>
+    </seciton>
 
-      <section class="opportunities">
-        <div class="opportunities-wrapper">
-          <h3 class="opportunities-title">What you can do with Qubit.</h3>
-          <div class="opportunities-cards">
-            <div class="opportunities-card">
-              <div class="opportunities-card-pic">
-                <img
-                  src="/img/svg/oppotunities-thumb/1-product-recommendations-thumb.svg"
-                  alt="1:1 Product recommendations"
-                />
-              </div>
-              <h4 class="opportunities-card-title">
-                1:1 Product recommendations
-              </h4>
-              <p class="opportunities-card-desc">
-                Use deep learning recommendations to engage customers in
-                seconds.
+    <!-- Statistics -->
+
+    <section class="statistics">
+      <div class="statistics-wrapper">
+        <div class="statistics-content">
+          <div class="statistics-content-left">
+            <h2 class="statistics-title">
+              Grow 2.5x faster than<br />your competitors.
+            </h2>
+            <a href="!#" class="statistics-book-a-demo-link"> Book a demo </a>
+            <a href="!#" class="statistics-customers-link">
+              Meet our customers >
+            </a>
+            <p class="statistics-note">*PwC audited methodology.</p>
+            <a href="" class="statistics-report">Read the report</a>
+          </div>
+          <div class="statistics-content-right">
+            <div class="statistics-content-right-item">
+              <p class="statistics-value">140%</p>
+              <p class="statistics-desc">
+                Qubit's top customers<br />annual growth rate.
               </p>
             </div>
-            <div class="opportunities-card">
-              <div class="opportunities-card-pic">
-                <img
-                  src="/img/svg/oppotunities-thumb/2-product-badging-thumb.svg"
-                  alt="1:1 Product recommendations"
-                />
-              </div>
-              <h4 class="opportunities-card-title">1:1 Product badging</h4>
-              <p class="opportunities-card-desc">
-                Guide discovery with personalized product badging. Push sales
-                with social proofing.
+            <div class="statistics-content-right-item">
+              <p class="statistics-value">9.5m</p>
+              <p class="statistics-desc">
+                Personalized experiences<br />delivered every hour.
               </p>
             </div>
-            <div class="opportunities-card">
-              <div class="opportunities-card-pic">
-                <img
-                  src="/img/svg/oppotunities-thumb/3-personalized-content-thumb.svg"
-                  alt="1:1 Product recommendations"
-                />
-              </div>
-              <h4 class="opportunities-card-title">Personalized content</h4>
-              <p class="opportunities-card-desc">
-                Your customers are unique. Present them with content that shows
-                you know them.
+            <div class="statistics-content-right-item">
+              <p class="statistics-value">$20bn</p>
+              <p class="statistics-desc">
+                Online sales generated<br />by our customers in 2020.
               </p>
             </div>
-            <div class="opportunities-card">
-              <div class="opportunities-card-pic">
-                <img
-                  src="/img/svg/oppotunities-thumb/4-product-insights-thumb.svg"
-                  alt="1:1 Product recommendations"
-                />
-              </div>
-              <h4 class="opportunities-card-title">Product insights</h4>
-              <p class="opportunities-card-desc">
-                A platform packed with insights helping you discover the hard
-                hitting things you can do next.
+            <div class="statistics-content-right-item">
+              <p class="statistics-value">4.4m</p>
+              <p class="statistics-desc">
+                Shoppers influenced<br />by Qubit every day.
               </p>
             </div>
-            <div class="opportunities-card">
-              <div class="opportunities-card-pic">
-                <img
-                  src="/img/svg/oppotunities-thumb/5-commerceAI-thumb.svg"
-                  alt="1:1 Product recommendations"
-                />
-              </div>
-              <h4 class="opportunities-card-title">CommerceAI</h4>
-              <p class="opportunities-card-desc">
-                Your customer's behavioral data is telling you a story. Use
-                predictive and affinity based algorithms to serve them better.
+            <div class="statistics-content-right-item">
+              <p class="statistics-value">364</p>
+              <p class="statistics-desc">
+                Ecommerce stores are<br />growing faster with Qubit.
               </p>
             </div>
-            <div class="opportunities-card">
-              <div class="opportunities-card-pic">
-                <img
-                  src="/img/svg/oppotunities-thumb/6-platform-integrations-thumb.svg"
-                  alt="1:1 Product recommendations"
-                />
-              </div>
-              <h4 class="opportunities-card-title">Platform integrations</h4>
-              <p class="opportunities-card-desc">
-                Connect Qubit to any tool via API. Import data or trigger an
-                experience on any platform.
+            <div class="statistics-content-right-item">
+              <p class="statistics-value">$1.6bn</p>
+              <p class="statistics-desc">
+                Incremental revenue generated<br />by our customers in 2020.*
               </p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Leading-brands -->
-      </section>
-      <section class="leading-brands">
-        <div class="leading-brands-wrapper">
-          <h3 class="leading-brands-title">Trusted by leading brands.</h3>
-
-          <div class="leading-brands-cards-with-arrow">
-            <button class="arrow-left arrow"></button>
-
-            <div class="leading-brands-cards">
-              <div class="leading-brands-card">
-                <div class="leading-brands-card-image-container">
-                  <img
-                    class="leading-brands-card-image"
-                    src="/img/leading-brands/leading-brands-image-1.jpg"
-                    alt="Clinique"
-                  />
-                </div>
-                <div class="leading-brands-card-shadow-container">
-                  <div class="leading-brands-card-logo-container">
-                    <img
-                      src="/img/svg/leading-brands/leading-brands-logo-1.svg"
-                      alt="Clinique"
-                    />
-                  </div>
-                  <p class="leading-brands-card-desc">
-                    Clinique builds relationships with millions of customers
-                    each year.
-                  </p>
-                </div>
-              </div>
-              <div class="leading-brands-card">
-                <div class="leading-brands-card-image-container">
-                  <img
-                    class="leading-brands-card-image"
-                    src="/img/leading-brands/leading-brands-image-2.jpg"
-                    alt="River Island"
-                  />
-                </div>
-                <div class="leading-brands-card-shadow-container">
-                  <div class="leading-brands-card-logo-container">
-                    <img
-                      src="/img/svg/leading-brands/leading-brands-logo-2.svg"
-                      alt="River Island"
-                    />
-                  </div>
-                  <p class="leading-brands-card-desc">
-                    River Island transforms the customer experience with
-                    personalization.
-                  </p>
-                </div>
-              </div>
-
-              <div class="leading-brands-card">
-                <div class="leading-brands-card-image-container">
-                  <img
-                    class="leading-brands-card-image"
-                    src="/img/leading-brands/leading-brands-image-3.jpg"
-                    alt="MandMDirect"
-                  />
-                </div>
-                <div class="leading-brands-card-shadow-container">
-                  <div class="leading-brands-card-logo-container">
-                    <img
-                      src="/img/svg/leading-brands/leading-brands-logo-3.svg"
-                      alt="MandMDirect"
-                    />
-                  </div>
-                  <p class="leading-brands-card-desc">
-                    MandM Direct drives increase in revenue with deep learning
-                    recs
-                  </p>
-                </div>
-              </div>
+    <!-- CommerceAI -->
+    <section class="commerce">
+      <div class="commerce-wrapper">
+        <!--В аналогичном заголовке предыдущего блока использовался тег h2. Лучше выбрать одинаковый для всех сходных элементов.-->
+        <h3 class="commerce-title">Qubit CommerceAI.</h3>
+        <p class="post-title">The new way to drive growth.</p>
+        <div class="commerce-cards">
+          <div class="commerce-card">
+            <div class="commerce-card-pic">
+              <img src="/img/svg/more-insight-thumb.svg" alt="More insight" />
             </div>
-            <button type="button" class="arrow-right arrow"></button>
+            <h4 class="commerce-card-title">More insight</h4>
+            <p class="commerce-card-desc">
+              Learn which products drive performance and which don't, through
+              automated insights you can action.
+            </p>
+          </div>
+          <div class="commerce-card">
+            <div class="commerce-card-pic">
+              <img src="/img/svg/more-personal-thumb.svg" alt="More personal" />
+            </div>
+            <h4 class="commerce-card-title">More personal</h4>
+            <p class="commerce-card-desc">
+              Qubit CommerceAI generates a model per shopper to make every
+              customer interaction more relevant.
+            </p>
+          </div>
+          <div class="commerce-card">
+            <div class="commerce-card-pic">
+              <img src="/img/svg/more-effective-thumb.svg" alt="More effective" />
+            </div>
+            <h4 class="commerce-card-title">More effective</h4>
+            <p class="commerce-card-desc">
+              Qubit fuses data, intent, and design tools to enable your team
+              to create more effective customer experiences.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="industries">
-        <div class="industries-wrapper">
-          <h3 class="industries-title">We specialize in your industry.</h3>
-          <p class="industries-title-desc">
-            Learn how we are delivering personalization at scale across sectors.
-          </p>
-          <div class="industries-cards">
-            <div class="industries-card">
-              <div class="industries-card-title-img-container">
-                <img src="/img/svg/industries/1-industries-thumb.svg" alt="" />
-                <h4 class="industries-card-title">Beauty and cosmetics</h4>
-              </div>
+      </div>
+    </section>
 
-              <p class="industies-card-desc">
-                Discover relevant products. Push samples. Upsell and replenish.
-              </p>
-              <span class="industies-card-bottom">
-                Explore our solutions for beauty and cosmetics.
-              </span>
-            </div>
-            <div class="industries-card">
-              <div class="industries-card-title-img-container">
-                <img src="/img/svg/industries/2-industries-thumb.svg" alt="" />
-                <h4 class="industries-card-title">Beauty and cosmetics</h4>
-              </div>
+    <!-- Part-with-video -->
+    <section class="video-part">
+      <h3 class="video-part-title">All the power. Easy to use.</h3>
+      <p class="video-part-title-desc">
+        By collaborating with real ecommerce teams we've built the next-gen
+        personalization tool. No code. No clunkiness.
+      </p>
+      <div class="video-wrapper">
+        <!--Попробуй встроить сюда какое-нибудь видео =)-->>
+        <img class="video-image" src="/img/video.jpg" alt="video" />
+      </div>
+      <div class="video-wrap-container-links">
+        <a href="#!" class="video-part-see-product-link">See product</a>
+        <a href="#!" class="video-part-book-a-demo-link">Book a demo</a>
+      </div>
+    </section>
 
-              <p class="industies-card-desc">
-                Discover relevant products. Push samples. Upsell and replenish.
-              </p>
-              <span class="industies-card-bottom">
-                Explore our solutions for beauty and cosmetics.
-              </span>
-            </div>
-            <div class="industries-card">
-              <div class="industries-card-title-img-container">
-                <img src="/img/svg/industries/3-industries-thumb.svg" alt="" />
-                <h4 class="industries-card-title">Beauty and cosmetics</h4>
-              </div>
+    <!-- Opportunities -->
 
-              <p class="industies-card-desc">
-                Discover relevant products. Push samples. Upsell and replenish.
-              </p>
-              <span class="industies-card-bottom">
-                Explore our solutions for beauty and cosmetics.
-              </span>
+    <section class="opportunities">
+      <div class="opportunities-wrapper">
+        <h3 class="opportunities-title">What you can do with Qubit.</h3>
+        <div class="opportunities-cards">
+          <div class="opportunities-card">
+            <div class="opportunities-card-pic">
+              <img src="/img/svg/oppotunities-thumb/1-product-recommendations-thumb.svg"
+                alt="1:1 Product recommendations" />
             </div>
-            <div class="industries-card">
-              <div class="industries-card-title-img-container">
-                <img src="/img/svg/industries/4-industries-thumb.svg" alt="" />
-                <h4 class="industries-card-title">Beauty and cosmetics</h4>
-              </div>
-
-              <p class="industies-card-desc">
-                Discover relevant products. Push samples. Upsell and replenish.
-              </p>
-              <span class="industies-card-bottom">
-                Explore our solutions for beauty and cosmetics.
-              </span>
+            <h4 class="opportunities-card-title">
+              1:1 Product recommendations
+            </h4>
+            <p class="opportunities-card-desc">
+              Use deep learning recommendations to engage customers in
+              seconds.
+            </p>
+          </div>
+          <div class="opportunities-card">
+            <div class="opportunities-card-pic">
+              <img src="/img/svg/oppotunities-thumb/2-product-badging-thumb.svg" alt="1:1 Product recommendations" />
             </div>
-            <div class="industries-card">
-              <div class="industries-card-title-img-container">
-                <img src="/img/svg/industries/5-industries-thumb.svg" alt="" />
-                <h4 class="industries-card-title">Beauty and cosmetics</h4>
-              </div>
-
-              <p class="industies-card-desc">
-                Discover relevant products. Push samples. Upsell and replenish.
-              </p>
-              <span class="industies-card-bottom">
-                Explore our solutions for beauty and cosmetics.
-              </span>
+            <h4 class="opportunities-card-title">1:1 Product badging</h4>
+            <p class="opportunities-card-desc">
+              Guide discovery with personalized product badging. Push sales
+              with social proofing.
+            </p>
+          </div>
+          <div class="opportunities-card">
+            <div class="opportunities-card-pic">
+              <img src="/img/svg/oppotunities-thumb/3-personalized-content-thumb.svg"
+                alt="1:1 Product recommendations" />
             </div>
-            <div class="industries-card">
-              <div class="industries-card-title-img-container">
-                <img src="/img/svg/industries/6-industries-thumb.svg" alt="" />
-                <h4 class="industries-card-title">Beauty and cosmetics</h4>
-              </div>
-
-              <p class="industies-card-desc">
-                Discover relevant products. Push samples. Upsell and replenish.
-              </p>
-              <span class="industies-card-bottom">
-                Explore our solutions for beauty and cosmetics.
-              </span>
+            <h4 class="opportunities-card-title">Personalized content</h4>
+            <p class="opportunities-card-desc">
+              Your customers are unique. Present them with content that shows
+              you know them.
+            </p>
+          </div>
+          <div class="opportunities-card">
+            <div class="opportunities-card-pic">
+              <img src="/img/svg/oppotunities-thumb/4-product-insights-thumb.svg" alt="1:1 Product recommendations" />
             </div>
+            <h4 class="opportunities-card-title">Product insights</h4>
+            <p class="opportunities-card-desc">
+              A platform packed with insights helping you discover the hard
+              hitting things you can do next.
+            </p>
+          </div>
+          <div class="opportunities-card">
+            <div class="opportunities-card-pic">
+              <img src="/img/svg/oppotunities-thumb/5-commerceAI-thumb.svg" alt="1:1 Product recommendations" />
+            </div>
+            <h4 class="opportunities-card-title">CommerceAI</h4>
+            <p class="opportunities-card-desc">
+              Your customer's behavioral data is telling you a story. Use
+              predictive and affinity based algorithms to serve them better.
+            </p>
+          </div>
+          <div class="opportunities-card">
+            <div class="opportunities-card-pic">
+              <img src="/img/svg/oppotunities-thumb/6-platform-integrations-thumb.svg"
+                alt="1:1 Product recommendations" />
+            </div>
+            <h4 class="opportunities-card-title">Platform integrations</h4>
+            <p class="opportunities-card-desc">
+              Connect Qubit to any tool via API. Import data or trigger an
+              experience on any platform.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- Ecosystem -->
-      <section class="ecosystem">
-        <div class="ecosystem-wrapper">
-          <div class="ecosystem-flex-container">
-            <div class="ecosystem-left">
-              <h3 class="ecosystem-left-title">A connected ecosystem.</h3>
-              <p class="ecosystem-left-desc-1">
-                The Qubit personalization platform is designed with enterprise
-                and high-growth businesses in mind.
-              </p>
-              <p class="ecosystem-left-desc-2">
-                Our open ecosystem approach means you can connect any data
-                source and deliver personalization across any channel.
-              </p>
-              <a href="#!" class="ecosystem-left-link">See our integrations</a>
+      <!-- Leading-brands -->
+    </section>
+    <section class="leading-brands">
+      <div class="leading-brands-wrapper">
+        <h3 class="leading-brands-title">Trusted by leading brands.</h3>
+
+        <div class="leading-brands-cards-with-arrow">
+          <!--Кнопки-стрелочки не соответствуют макету-->
+          <button class="arrow-left arrow"></button>
+
+          <div class="leading-brands-cards">
+            <div class="leading-brands-card">
+              <div class="leading-brands-card-image-container">
+                <img class="leading-brands-card-image" src="/img/leading-brands/leading-brands-image-1.jpg"
+                  alt="Clinique" />
+              </div>
+              <div class="leading-brands-card-shadow-container">
+                <div class="leading-brands-card-logo-container">
+                  <img src="/img/svg/leading-brands/leading-brands-logo-1.svg" alt="Clinique" />
+                </div>
+                <p class="leading-brands-card-desc">
+                  Clinique builds relationships with millions of customers
+                  each year.
+                </p>
+              </div>
             </div>
-            <div class="ecosystem-right">
-              <div class="ecosystem-right-container-image">
-                <img
-                  class="ecosystem-right-image"
-                  src="/img/ecosystem.png"
-                  alt="Ecosystem"
-                />
+            <div class="leading-brands-card">
+              <div class="leading-brands-card-image-container">
+                <img class="leading-brands-card-image" src="/img/leading-brands/leading-brands-image-2.jpg"
+                  alt="River Island" />
+              </div>
+              <div class="leading-brands-card-shadow-container">
+                <div class="leading-brands-card-logo-container">
+                  <img src="/img/svg/leading-brands/leading-brands-logo-2.svg" alt="River Island" />
+                </div>
+                <p class="leading-brands-card-desc">
+                  River Island transforms the customer experience with
+                  personalization.
+                </p>
+              </div>
+            </div>
+
+            <div class="leading-brands-card">
+              <div class="leading-brands-card-image-container">
+                <img class="leading-brands-card-image" src="/img/leading-brands/leading-brands-image-3.jpg"
+                  alt="MandMDirect" />
+              </div>
+              <div class="leading-brands-card-shadow-container">
+                <div class="leading-brands-card-logo-container">
+                  <img src="/img/svg/leading-brands/leading-brands-logo-3.svg" alt="MandMDirect" />
+                </div>
+                <p class="leading-brands-card-desc">
+                  MandM Direct drives increase in revenue with deep learning
+                  recs
+                </p>
               </div>
             </div>
           </div>
+          <button type="button" class="arrow-right arrow"></button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Today -->
-      <section class="today">
-        <div class="today-wrapper">
-          <h3 class="today-title">Book a demo today.</h3>
-          <form action="" class="today-sending-form">
-            <fieldset>
-              <p class="sending-form-info">
-                <input
-                  name="user-email"
-                  class="today-sending-form-field"
-                  type="text"
-                  value="Enter your email"
-                  onfocus="this.value=''"
-                  autocomplete="off"
-                />
-                <input
-                  class="today-sending-form-submit"
-                  type="submit"
-                  value="Book a demo"
-                />
-              </p>
-            </fieldset>
-          </form>
-        </div>
-      </section>
+    <section class="industries">
+      <div class="industries-wrapper">
+        <h3 class="industries-title">We specialize in your industry.</h3>
+        <p class="industries-title-desc">
+          Learn how we are delivering personalization at scale across sectors.
+        </p>
+        <!--Карточки, кроме первой, не соответствуют макету-->
+        <div class="industries-cards">
+          <div class="industries-card">
+            <div class="industries-card-title-img-container">
+              <img src="/img/svg/industries/1-industries-thumb.svg" alt="" />
+              <h4 class="industries-card-title">Beauty and cosmetics</h4>
+            </div>
 
-      <!-- Connect -->
-
-      <section class="connect">
-        <div class="connect-wrapper">
-          <!-- нужна ли тут обертка для изображения? зачем? -->
-          <div class="connect-image-container">
-            <img
-              class="connect-image"
-              src="/img/connect-logo.jpg"
-              alt="Highest User Adoption Winter"
-            />
+            <p class="industies-card-desc">
+              Discover relevant products. Push samples. Upsell and replenish.
+            </p>
+            <span class="industies-card-bottom">
+              Explore our solutions for beauty and cosmetics.
+            </span>
           </div>
-          <p class="connect-title">Connect with us</p>
-          <ul class="connect-list-links">
-            <li class="connect-item">
-              <a href="#!" class="connect-link"
-                ><img
-                  src="/img/svg/connect-thumbs/1-connect.svg"
-                  alt=""
-                  class="connect-thumb"
-              /></a>
+          <div class="industries-card">
+            <div class="industries-card-title-img-container">
+              <img src="/img/svg/industries/2-industries-thumb.svg" alt="" />
+              <h4 class="industries-card-title">Beauty and cosmetics</h4>
+            </div>
+
+            <p class="industies-card-desc">
+              Discover relevant products. Push samples. Upsell and replenish.
+            </p>
+            <span class="industies-card-bottom">
+              Explore our solutions for beauty and cosmetics.
+            </span>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-title-img-container">
+              <img src="/img/svg/industries/3-industries-thumb.svg" alt="" />
+              <h4 class="industries-card-title">Beauty and cosmetics</h4>
+            </div>
+
+            <p class="industies-card-desc">
+              Discover relevant products. Push samples. Upsell and replenish.
+            </p>
+            <span class="industies-card-bottom">
+              Explore our solutions for beauty and cosmetics.
+            </span>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-title-img-container">
+              <img src="/img/svg/industries/4-industries-thumb.svg" alt="" />
+              <h4 class="industries-card-title">Beauty and cosmetics</h4>
+            </div>
+
+            <p class="industies-card-desc">
+              Discover relevant products. Push samples. Upsell and replenish.
+            </p>
+            <span class="industies-card-bottom">
+              Explore our solutions for beauty and cosmetics.
+            </span>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-title-img-container">
+              <img src="/img/svg/industries/5-industries-thumb.svg" alt="" />
+              <h4 class="industries-card-title">Beauty and cosmetics</h4>
+            </div>
+
+            <p class="industies-card-desc">
+              Discover relevant products. Push samples. Upsell and replenish.
+            </p>
+            <span class="industies-card-bottom">
+              Explore our solutions for beauty and cosmetics.
+            </span>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-title-img-container">
+              <img src="/img/svg/industries/6-industries-thumb.svg" alt="" />
+              <h4 class="industries-card-title">Beauty and cosmetics</h4>
+            </div>
+
+            <p class="industies-card-desc">
+              Discover relevant products. Push samples. Upsell and replenish.
+            </p>
+            <span class="industies-card-bottom">
+              Explore our solutions for beauty and cosmetics.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecosystem -->
+    <section class="ecosystem">
+      <div class="ecosystem-wrapper">
+        <div class="ecosystem-flex-container">
+          <div class="ecosystem-left">
+            <h3 class="ecosystem-left-title">A connected ecosystem.</h3>
+            <p class="ecosystem-left-desc-1">
+              The Qubit personalization platform is designed with enterprise
+              and high-growth businesses in mind.
+            </p>
+            <p class="ecosystem-left-desc-2">
+              Our open ecosystem approach means you can connect any data
+              source and deliver personalization across any channel.
+            </p>
+            <a href="#!" class="ecosystem-left-link">See our integrations</a>
+          </div>
+          <div class="ecosystem-right">
+            <div class="ecosystem-right-container-image">
+              <img class="ecosystem-right-image" src="/img/ecosystem.png" alt="Ecosystem" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Today -->
+    <section class="today">
+      <div class="today-wrapper">
+        <h3 class="today-title">Book a demo today.</h3>
+        <form action="" class="today-sending-form">
+          <fieldset>
+            <!--Снова лишний тег p-->>
+            <p class="sending-form-info">
+              <!--Для подсказки внутри input используй атрибут placeholder-->
+              <input name="user-email" class="today-sending-form-field" type="text" value="Enter your email"
+                onfocus="this.value=''" autocomplete="off" />
+              <input class="today-sending-form-submit" type="submit" value="Book a demo" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <!-- Connect -->
+
+    <section class="connect">
+      <div class="connect-wrapper">
+        <!-- нужна ли тут обертка для изображения? зачем? -->
+        <!--Тут, и во всех случаях выше можно обойтись без неё-->
+        <div class="connect-image-container">
+          <img class="connect-image" src="/img/connect-logo.jpg" alt="Highest User Adoption Winter" />
+        </div>
+        <p class="connect-title">Connect with us</p>
+        <ul class="connect-list-links">
+          <li class="connect-item">
+            <a href="#!" class="connect-link"><img src="/img/svg/connect-thumbs/1-connect.svg" alt=""
+                class="connect-thumb" /></a>
+          </li>
+          <li class="connect-item">
+            <a href="#!" class="connect-link"><img src="/img/svg/connect-thumbs/2-connect.svg" alt=""
+                class="connect-thumb" /></a>
+          </li>
+          <li class="connect-item">
+            <a href="#!" class="connect-link"><img src="/img/svg/connect-thumbs/3-connect.svg" alt=""
+                class="connect-thumb" /></a>
+          </li>
+          <li class="connect-item">
+            <a href="#!" class="connect-link"><img src="/img/svg/connect-thumbs/4-connect.svg" alt=""
+                class="connect-thumb" /></a>
+          </li>
+          <li class="connect-item">
+            <a href="#!" class="connect-link"><img src="/img/svg/connect-thumbs/5-connect.svg" alt=""
+                class="connect-thumb" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-wrapper">
+
+        <div class="footer-flex-container">
+          <ul class="featured-list">
+            <!--Не помещай внутрь списка ничего кроме элементов списка li. Лучше сделать обертку.-->>
+            <h4 class="featured-title common-title">Featured Capabilities</h4>
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">A/B testing</a>
             </li>
-            <li class="connect-item">
-              <a href="#!" class="connect-link"
-                ><img
-                  src="/img/svg/connect-thumbs/2-connect.svg"
-                  alt=""
-                  class="connect-thumb"
-              /></a>
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Custom machine learning</a>
             </li>
-            <li class="connect-item">
-              <a href="#!" class="connect-link"
-                ><img
-                  src="/img/svg/connect-thumbs/3-connect.svg"
-                  alt=""
-                  class="connect-thumb"
-              /></a>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Abandonment recovery</a>
             </li>
-            <li class="connect-item">
-              <a href="#!" class="connect-link"
-                ><img
-                  src="/img/svg/connect-thumbs/4-connect.svg"
-                  alt=""
-                  class="connect-thumb"
-              /></a>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Journey Personalization</a>
             </li>
-            <li class="connect-item">
-              <a href="#!" class="connect-link"
-                ><img
-                  src="/img/svg/connect-thumbs/5-connect.svg"
-                  alt=""
-                  class="connect-thumb"
-              /></a>
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Customer insights</a>
+            </li>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Mobile app personalization</a>
+            </li>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Customer polling and feedback</a>
+            </li>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Cross-channel personalization</a>
+            </li>
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Customer segmentation</a>
+            </li>
+
+
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Social proofing</a>
+            </li>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Data collection</a>
+            </li>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Website personalization</a>
+            </li>
+
+            <li class="featured-item footer-item">
+              <a href="#!" class="featured-link footer-link">Ecommerce merchandising</a>
+            </li>
+
             </li>
           </ul>
+          <ul class="products">
+            <h4 class="products-title common-title">Products</h4>
+            <li class="products-item footer-item">
+              <a href="#!" class="products-link footer-link">1:1 Product recommendations</a>
+            </li>
+            <li class="products-item footer-item">
+              <a href="#!" class="products-link footer-link">1:1 Product badging</a>
+            </li>
+            <li class="products-item footer-item">
+              <a href="#!" class="products-link footer-link">1:1 Journey personalization</a>
+            </li>
+            <li class="products-item footer-item">
+              <a href="#!" class="products-link footer-link">Personalized content</a>
+            </li>
+            <li class="products-item footer-item">
+              <a href="#!" class="products-link footer-link">Product insights</a>
+            </li>
+          </ul>
+          <ul class="resources">
+            <h4 class="resources-title common-title">Resources</h4>
+            <li class="resources-item footer-item">
+              <a href="#!" class="resources-link footer-link">Resources</a>
+            </li>
+            <li class="resources-item footer-item">
+              <a href="#!" class="resources-link footer-link">Customers</a>
+            </li>
+            <li class="resources-item footer-item">
+              <a href="#!" class="resources-link footer-link">Qubit Blog.</a>
+            </li>
+            <li class="resources-item footer-item">
+              <a href="#!" class="resources-link footer-link">Glossary</a>
+
+          </ul>
+          <ul class="company">
+            <h4 class="company-title common-title">Company</h4>
+            <li class="company-item footer-item">
+              <a href="#!" class="company-link footer-link">Why Qubit?</a>
+            </li>
+            <li class="company-item footer-item">
+              <a href="#!" class="company-link footer-link">About us</a>
+            </li>
+            <li class="company-item footer-item">
+              <a href="#!" class="company-link footer-link">Careers</a>
+            </li>
+            <li class="company-item footer-item">
+              <a href="#!" class="company-link footer-link">Press</a>
+            </li>
+            <li class="company-item footer-item">
+              <a href="#!" class="company-link footer-link">Contact</a>
+            </li>
+          </ul>
+          <!--Тут ul лишний-->>
+          <ul class="working">
+            <h4 class="working-title common-title">Working with us</h4>
+            <li class="working-item footer-item">
+              <a href="#!" class="working-link footer-link">Legal</a>
+            </li>
+
         </div>
-      </section>
 
-      <!-- Footer -->
-      <section class="footer">
-        <div class="footer-wrapper">
-        
-          <div class="footer-flex-container">
-            <ul class="featured-list">
-              <h4 class="featured-title common-title">Featured Capabilities</h4>
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">A/B testing</a>
-              </li>
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Custom machine learning</a>
-              </li>
+      </div>
+      <div class="footer-logo-container"><img src="/img/svg/Qubit-logo-footer.svg" alt="logo" class="footer-logo"></div>
+      <!--Снова текст прямо внутри div. Сделай для него отдельный p-->
+      <div class="post-footer-logo">© 2021 Qubit. All rights reserved.
+        <img class="world" src="/img/svg/world-icon.svg" alt="world">
+      </div>
 
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Abandonment recovery</a>
-              </li>
+    </section>
+  </main>
+</body>
 
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Journey Personalization</a>
-              </li>
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Customer insights</a>
-              </li>
-
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link"
-                  >Mobile app personalization</a
-                >
-              </li>
-
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link"
-                  >Customer polling and feedback</a
-                >
-              </li>
-
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link"
-                  >Cross-channel personalization</a>
-              </li>
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link"
-                  >Customer segmentation</a>
-              </li>
-
-              
-
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Social proofing</a>
-              </li>
-
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Data collection</a>
-              </li>
-
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Website personalization</a>
-              </li>
-
-              <li class="featured-item footer-item">
-                <a href="#!" class="featured-link footer-link">Ecommerce merchandising</a></li>
-      
-              </li>
-            </ul>
-            <ul class="products">
-              <h4 class="products-title common-title">Products</h4>
-              <li class="products-item footer-item">
-                <a href="#!" class="products-link footer-link">1:1 Product recommendations</a>
-              </li>
-              <li class="products-item footer-item">
-                <a href="#!" class="products-link footer-link">1:1 Product badging</a>
-              </li>
-              <li class="products-item footer-item">
-                <a href="#!" class="products-link footer-link">1:1 Journey personalization</a>
-              </li>
-              <li class="products-item footer-item">
-                <a href="#!" class="products-link footer-link">Personalized content</a>
-              </li>
-              <li class="products-item footer-item">
-                <a href="#!" class="products-link footer-link">Product insights</a>
-              </li>
-            </ul>
-            <ul class="resources">
-              <h4 class="resources-title common-title">Resources</h4>
-              <li class="resources-item footer-item">
-                <a href="#!" class="resources-link footer-link">Resources</a>
-              </li>
-              <li class="resources-item footer-item">
-                <a href="#!" class="resources-link footer-link">Customers</a>
-              </li>
-              <li class="resources-item footer-item">
-                <a href="#!" class="resources-link footer-link">Qubit Blog.</a>
-              </li>
-              <li class="resources-item footer-item">
-                <a href="#!" class="resources-link footer-link">Glossary</a>
-      
-            </ul>
-            <ul class="company">
-              <h4 class="company-title common-title">Company</h4>
-              <li class="company-item footer-item">
-                <a href="#!" class="company-link footer-link">Why Qubit?</a>
-              </li>
-              <li class="company-item footer-item">
-                <a href="#!" class="company-link footer-link">About us</a>
-              </li>
-              <li class="company-item footer-item">
-                <a href="#!" class="company-link footer-link">Careers</a>
-              </li>
-              <li class="company-item footer-item">
-                <a href="#!" class="company-link footer-link">Press</a>
-              </li>
-              <li class="company-item footer-item">
-                <a href="#!" class="company-link footer-link">Contact</a>
-              </li>
-            </ul>
-            <ul class="working">
-              <h4 class="working-title common-title">Working with us</h4>
-              <li class="working-item footer-item">
-                <a href="#!" class="working-link footer-link">Legal</a>
-              </li>
-            
-          </div>
-         
-        </div>
-        <div class="footer-logo-container"><img src="/img/svg/Qubit-logo-footer.svg" alt="logo" class="footer-logo"></div>
-        <div class="post-footer-logo">© 2021 Qubit. All rights reserved.
-          <img class="world" src="/img/svg/world-icon.svg" alt="world">
-        </div>
-    
-      </section>
-    </main>
-  </body>
 </html>
